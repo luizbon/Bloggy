@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Bloggy.ViewModels;
+using Xamarin.Forms;
+
+namespace Bloggy.Views
+{
+    public partial class HomePage : ContentPage
+    {
+        public HomePage()
+        {
+            InitializeComponent();
+            BindingContext = new HomePageViewModel();
+        }
+    }
+}
